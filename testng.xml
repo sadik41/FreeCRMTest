@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="E:/AutomationVideoSelenium/Architecture of Page Object Model (POM) Design With Selenium Naveen/OOPConceptionPOM/src/main/resources">
+        <classes>
+            <class name="com.crm.qa.testdata.HomePageTest"/>
+<!--            <class name="com.crm.qa.testdata.LoginPageTest"/>-->
+        </classes>
+    </test>
+</suite>

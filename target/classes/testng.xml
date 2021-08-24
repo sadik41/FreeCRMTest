@@ -1,0 +1,10 @@
+<suite thread-count="2" name="Suite" parallel="tests" verbose="3">
+    <!-- Start first test-->
+    <test name="facebook home test chrome" parallel="methods" thread-count="5">
+        <parameter name="browser" value="ff"/>
+        <classes>
+            <class name="LoginTest">
+            </class>
+        </classes>
+    </test>
+</suite>
