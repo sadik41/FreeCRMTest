@@ -32,13 +32,13 @@ public class ContactsPageTest extends TestBase {
         contactPage = homePage.clickOnContactLink();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = false)
     public void verifyContactsPageLabel() throws InterruptedException {
         Thread.sleep(3000);
         Assert.assertTrue(contactPage.verifyContactLabel(),"contacts label is missing on the page");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, enabled = false)
     public void selectContactsTest(){
         contactPage.selectContactsByName("Sadikur Rahman");
     }
@@ -48,7 +48,7 @@ public class ContactsPageTest extends TestBase {
         Object data [][] =TestUtil.getTestData(sheetName);
         return data;
     }
-    @Test(priority = 3,dataProvider = "getCRMTestData")
+    @Test(priority = 3,dataProvider = "getCRMTestData",enabled = false)
     public void createValidateNewContact(String firstname,String lastname,String company) throws InterruptedException {
         contactPage.createNewContact(firstname, lastname, company);
     }
